@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Model Details</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .body-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            min-height: 20vh;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            background-color: #000000;
+            align-items: center;
+        }
+        
+        .sl-img {
+            width: 100%;
+        }
+        
+        .footer {
+            background-color: #000000;
+            min-height: 30vh;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logo-img {
+            height: 15vh;
+        }
+        
+        .model-content a {
+            font-weight: lighter;
+            color: #E5E5E5;
+        }
+        
+        .left a {
+            color: #ffffff;
+        }
+        
+        .left a:hover {
+            text-decoration: unset;
+            color: #E5E5E5;
+        }
+        
+        .right {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .right i {
+            margin-left: 10%;
+        }
+        
+        .navbar-toggler {
+            color: #ffffff;
+        }
+        
+        .navbar-toggler:focus {
+            outline: unset;
+        }
+        
+        .top {
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .top img {
+            height: 60px;
+        }
+        
+        .mid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: #ffffff;
+            text-align: center;
+            height: 30%;
+        }
+        
+        .bot {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            height: 30%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        .bot i {
+            color: #ffffff;
+        }
+        
+        .main {
+            min-height: 50%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .video-container iframe {
+            margin: 5% 10%;
+            height: 450px;
+        }
+        
+        .content-container {
+            display: flex;
+        }
+        
+        .content-container img {
+            width: 40%;
+        }
+        
+        .content {
+            margin: 50px;
+        }
+        
+        .content h1 {
+            text-align: center;
+        }
+        
+        @media only screen and (max-device-width: 640px) {
+            .content-container img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="header">
+            <img src="logo.png" class="logo-img">
+            <div class="container">
+                <div class="row">
+                    <nav class="left col-sm-8 navbar navbar-expand-lg">
+                        <a class="nav-link" href="#">MODELS</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-caret-down fa-lg"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRICING</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">COMPANY</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="right col-sm-4">
+                        <i class="fas fa-search fa-lg"></i>
+                        <i class="fas fa-bars fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <img src="model.png" class="sl-img">
+            <div class="video-container">
+                <iframe width="80%" height="80%" src="https://www.youtube.com/embed/yXB4eXXD0wI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content-container">
+                <img src="panigale1.png">
+                <div class="content">
+                    <h1>OVERVIEW</h1>
+                    <p>The 2020 version of the new Panigale V4 boosts performance even further and takes track riding to the next level for amateurs and pros alike. A series of refinements make for an easier, more user-friendly, less fatiguing ride while
+                        simultaneously making the bike faster not just on individual laps but over entire timed sessions.<br/> The Aero Pack provides enhanced airflow protection and improves overall vehicle stability, enhancing confidence. The Front Frame,
+                        instead, modifies stiffness to give better front-end 'feel' at extreme lean angles.<br/> Ducati and Ducati Corse engineers have crunched the feedback/data numbers from customers all over the world and Superbike World Championship
+                        events. Their analysis has led to a series of aerodynamic, chassis, electronic control and Ride by Wire mapping changes: designed to increase stability and turn-in speed, these changes make it easier to close corners and ensure
+                        riders enjoy more confident throttle control.
+                        <br/> The S version comes with Öhlins event-based electronic control; this uses the second-generation Öhlins Smart EC (Electronic Control) system that, exploits the full potential of the IMU 6D.</p>
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <div class="content">
+                    <h1>DESIGN AND AERODYNAMICS</h1>
+                    <p>Co-developed by Ducati Corse and the Ducati Style Center, the new Panigale V4 2020 aerodynamics package now mirrors that of the Panigale V4 R. The result; fairings that - in true Panigale style - meet official Ducati Superbike requirements
+                        in full.<br/> As in MotoGP, aerodynamic development involved a series of preliminary CFD (Computational Fluid Dynamics) studies, followed by optimisation on a full-scale wind tunnel model.<br/> The new Panigale V4 2020 aerodynamics
+                        package includes:
+                        <br/> Plexiglas screen, nose fairing and larger lateral fairings<br/> More efficient lateral vents for radiator through-air<br/> Aerofoils
+                    </p>
+                </div>
+                <img src="panigale2.png">
+            </div>
+
+            <div class="content-container">
+                <img src="panigale3.png">
+                <div class="content">
+                    <h1>ENGINE</h1>
+                    <h4>V4 90° layout</h4>
+                    <p>The new Panigale V4 2020 is powered by the 1,103 cm3 Desmosedici Stradale (banked 42° back from the horizontal), a MotoGP-derived 90° V4 with Desmodromic timing, a one-of-a-kind engine featuring a counter-rotating crankshaft and Twin
+                        Pulse firing order.The engine can deliver 214 hp at 13,000 rpm and a torque of 12.6 kgm at 10,000 rpm, making for awesome road riding.</p>
+
+                    <h4>Desmo: blending tradition and the future</h4>
+                    <p>The new engine is designed around the Desmodromic system, a characteristic that helps make Ducati the fastest prototypes of the top racing class in motorcycle racing. With this high-rotation engine the "Desmo" achieves its maximum
+                        technical value, reaching levels of sophistication, compactness and lightness never seen before on a Ducati.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="top">
+                <img src="ducati-text.png" class="ducati-text">
+            </div>
+            <div class="mid">
+                <p>Copyright © 2020 Ducati Motor Holding S.p.A. – A Sole Shareholder Company - A Company subject to the Management and Coordination <br/> activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+            </div>
+            <div class="bot">
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-youtube fa-lg"></i>
+                <i class="fab fa-linkedin-in fa-lg"></i>
+
+            </div>
+        </div>
+    </div>
+</body>
