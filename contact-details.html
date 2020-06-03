@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us</title>
+    <title>Contact Details</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,10 +23,6 @@
             flex-direction: row;
             background-color: #000000;
             align-items: center;
-        }
-        
-        .content .sl-img {
-            width: 100%;
         }
         
         .footer {
@@ -113,64 +109,98 @@
             color: #ffffff;
         }
         
-        .question-info {
+        .main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .main-top {
+            padding-top: 3%;
+            padding-bottom: 3%;
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .main-mid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .main-bot {
+            display: flex;
+        }
+        
+        .details-btn {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+            border: 1px solid black;
+            height: 30px;
+            width: 150px;
+            border-radius: 20px;
+        }
+        
+        .btn-slected {
+            background-color: black;
+            color: white;
+        }
+        
+        .collapsible {
+            cursor: pointer;
+            padding: 18px;
+            width: 60%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+        
+        .collapsible:after {
+            content: '\25BC';
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\25B2";
+        }
+        
+        .content {
+            width: 60%;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+        }
+        
+        button:focus {
+            outline: unset;
+        }
+        
+        .qs-left {
+            padding-top: 3%;
             padding-left: 10%;
             width: 60%;
         }
         
-        .question-category {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-        
-        .question-bot {
-            display: flex;
-            flex-direction: row;
-        }
-        
-        .qs-left {
-            padding: 5%;
-            width: 50%;
-        }
-        
         .qs-right {
-            color: #000000;
-            width: 50%;
-            padding: 5%;
+            padding-top: 3%;
+            padding-right: 10%;
+            width: 40%;
             text-align: right;
         }
-        
-        .category-img {
-            height: 100%;
-            width: 30%;
-            text-align: center;
-        }
-        
-        .category-img p {
-            margin-top: 5%;
-        }
-        
-        .text-15 {
-            font-size: 1.5em;
-        }
-        
-        .text-2 {
-            font-size: 2em;
-        }
-        
-        .ct-img {
-            width: 100%;
-        }
-        
-        @media only screen and (max-device-width: 640px) {
-            .question-category {
-                flex-direction: column;
-            }
-        }
     </style>
-    <script>
-    </script>
 </head>
 
 <body>
@@ -208,39 +238,48 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <img src="contact.png" class="sl-img">
-
-            <div class="question-info">
-                <p class="text-2">FREQUENTLY ASKED QUESTIONS</p>
-                <p>This section is entirely dedicated to your needs and any kind of query you may have about Ducati. To make it easier for you to find your way around, we have created a list of the most frequently asked questions, divided into subject areas,
-                    along with their answers.</p>
-                <p>We hope you enjoy the site!</p>
+        <div class="main">
+            <div class="main-top">
+                <div class="details-btn btn-slected">COMPANY</div>
+                <div class="details-btn">PRODUCTS</div>
+                <div class="details-btn">EXPERICENCES</div>
             </div>
+            <div class="main-mid">
 
-            <div class="question-category">
-                <div class="category-img">
-                    <img src="ct1.png" class="ct-img">
-                    <p class="text-15">COMPANY</p>
+                <button class="collapsible">Are you looking for your nearest Ducati Authorized Dealer?</button>
+                <div class="content">
+                    <p>You can find the Ducati Authorized Dealer nearest to you in the section "Find Dealers" </p>
                 </div>
-                <div class="category-img">
-                    <img src="ct2.png" class="ct-img">
-                    <p class="text-15">PRODUCTS</p>
+                <button class="collapsible">Are you interested in doing your thesis or an internship at Ducati?</button>
+                <div class="content">
+                    <p>If you are interested in doing your thesis or an internship at Ducati, please visit the "Work with us" section of our website.</p>
                 </div>
-                <div class="category-img">
-                    <img src="ct3.png" class="ct-img">
-                    <p class="text-15">EXPERIENCES</p>
+                <button class="collapsible">Are you looking for material for your thesis?</button>
+                <div class="content">
+                    <p>Visit the Ducati website in the "Company" and "History" sections, where you will find lots of useful and periodically updated information. </p>
+                </div>
+                <button class="collapsible">Would you like to work for Ducati?</button>
+                <div class="content">
+                    <p>Visit the "Open positions" area on our website or send an application using the form provided.</p>
+                </div>
+                <button class="collapsible">Would you like to visit our Museum?</button>
+                <div class="content">
+                    <p>The Museum visit is possible without reservation for individuals or groups up to 10 people. Here you will find all the details about the visit to the Museum. </p>
+                </div>
+                <button class="collapsible">Would you like to become an official sponsor of the Ducati Corse Team?</button>
+                <div class="content">
+                    <p>A partnership with Ducati in the MotoGP and Superbike Championships can guarantee excellent results, not only in terms of advertising and promotion, but also from a commercial point of view. For more information fill in the form. </p>
                 </div>
             </div>
-            <div class="question-bot">
+            <div class="main-bot">
                 <div class="qs-left">
-                    <p>Can't find the answer you're looking for? <br /><br />If you haven't found the answer to your question, you can contact us directly by filling in the contact form linked below. Our staff is at your full disposal from Monday through
-                        Friday from 9am-6pm Pacific Time. Alternately, you may also contact us through the numbers listed below for our various support services.</p>
+                    <p>Can't find the answer you're looking for? <br />You can contact us directly by filling in the contact form.</p>
                 </div>
                 <div class="qs-right">
-                    <p>Fill the Contact Form<br /> Toll Free Customer Service 1-888-391-5446<br /> Ducati Financial Services 1-855-938-2284<br /> Warranty Roadside Assistance 1-800-234-1353 </p>
+                    <p>Fill the Contact Form</p>
                 </div>
             </div>
+
         </div>
         <div class="footer">
             <div class="top">
@@ -259,4 +298,21 @@
             </div>
         </div>
     </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
 </body>
