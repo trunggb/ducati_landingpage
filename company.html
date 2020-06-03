@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <style>
+        .body-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            min-height: 20vh;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            background-color: #000000;
+            align-items: center;
+        }
+        
+        .sl-img {
+            width: 100%;
+        }
+        
+        .footer {
+            background-color: #000000;
+            min-height: 30vh;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logo-img {
+            height: 15vh;
+        }
+        
+        .model-content a {
+            font-weight: lighter;
+            color: #E5E5E5;
+        }
+        
+        .left a {
+            color: #ffffff;
+        }
+        
+        .left a:hover {
+            text-decoration: unset;
+            color: #E5E5E5;
+        }
+        
+        .right {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .right i {
+            margin-left: 10%;
+        }
+        
+        .navbar-toggler {
+            color: #ffffff;
+        }
+        
+        .navbar-toggler:focus {
+            outline: unset;
+        }
+        
+        .top {
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .top img {
+            height: 60px;
+        }
+        
+        .mid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: lighter;
+            font-size: 0.7rem;
+            color: #ffffff;
+            text-align: center;
+            height: 30%;
+        }
+        
+        .bot {
+            width: 20%;
+            display: flex;
+            flex-direction: row;
+            height: 30%;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+        }
+        
+        .bot i {
+            color: #ffffff;
+        }
+        
+        .main {
+            min-height: 50%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content-container {
+            display: flex;
+        }
+        
+        .content-container img {
+            width: 40%;
+        }
+        
+        .content {
+            margin: 50px;
+        }
+        
+        .content li {
+            font-size: 2.5rem;
+        }
+        
+        @media only screen and (max-device-width: 640px) {
+            .content-container img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="header">
+            <img src="logo.png" class="logo-img">
+            <div class="container">
+                <div class="row">
+                    <nav class="left col-sm-8 navbar navbar-expand-lg">
+                        <a class="nav-link" href="#">MODELS</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-caret-down fa-lg"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRICING</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">COMPANY</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT US</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="right col-sm-4">
+                        <i class="fas fa-search fa-lg"></i>
+                        <i class="fas fa-bars fa-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <img src="com1.png" class="sl-img">
+            <div class="content-container">
+                <img src="com2.png">
+                <div class="content">
+                    <ul>
+                        <li>Trust</li>
+                        <li>Style</li>
+                        <li>Performance</li>
+                        <li>Sophistication</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <div class="content">
+                    <p>The world's most attractive motorcycles are the result of a deep <br/>commitment to racing competitions; they are the purest expression of <br/> <strong>refined skill, unmistakable design</strong> and above all, a <strong> passion for
+                        bikes.</strong>
+                    </p>
+                    <p>Ducati is proud to represent Italian industry - the <strong>essence of Italian style</strong> <br/>shows through the design of each bike. Sinuous, seductive and flexible <br/>lines with a permanent, timeless quality that sets an unsurpassable<br/>standard.
+                        Ducati Bikes – in over 60 nations throughout the world these <br/>models dominate the dreams of the most ardent motorcycle enthusiasts. </p>
+                </div>
+                <img src="com3.png">
+            </div>
+
+            <div class="content-container">
+                <img src="com4.png">
+                <div class="content">
+                    <p>The <strong>Desmodromic valve control system,</strong> the steel tubular Trellis frame, <br/>the <strong>L-Twin engine </strong>and the <strong>unmistakable sound of the power unit </strong>– these <br/>are the distinguishing features
+                        that underline the uniqueness of a Ducati. </p>
+                    <p>The list of our bikes' victories is proof of the value of our working <br/>philosophy: in the <strong> World Superbike Championship</strong>, Ducati has won 15 out <br/>of the last 18 Riders’ titles and 16 Manufacturers’ titles, while
+                        in the 2007 <br/> <strong>MotoGP Championship</strong> – less than four years after Ducati’s debut in the <br/>series – our Desmosedici GP7 topped the world Riders and Manufacturers’ rankings. </p>
+                </div>
+            </div>
+
+            <div class="content-container">
+
+                <div class="content">
+                    <p>
+                        The bond that, starting from the racetracks, ties Ducatisti the world over <br/>to the factory itself overcomes all barriers and is expressed by the <strong>Desmo <br/>Owners Clubs</strong>. The DOCs are in fact like a clan, linked
+                        by their allegiance
+                        <br/>to the Ducati flag. Ducatisti meet up at racetracks and events, at the <br/>World Ducati Week and also on Ducati.com, which is visited by over 14 <br/>million fans each year.
+                    </p>
+                </div>
+                <img src="com5.png">
+            </div>
+
+            <div class="content-container">
+                <img src="com6.png">
+                <div class="content">
+                    <p>The story of the Ducati dream, which began in Bologna in 1926, is <br/>recounted at the <strong>Ducati Museum.</strong> Here the stories of legendary bikes and <br/>riders are told and a pure passion for performance and excellence
+                        <br/>permeates the air. A passion that travels fast, opening new roads and <br/>creating history.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="top">
+                <img src="ducati-text.png" class="ducati-text">
+            </div>
+            <div class="mid">
+                <p>Copyright © 2020 Ducati Motor Holding S.p.A. – A Sole Shareholder Company - A Company subject to the Management and Coordination <br/> activities of AUDI AG. All rights reserved. VAT 05113870967</p>
+            </div>
+            <div class="bot">
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-youtube fa-lg"></i>
+                <i class="fab fa-linkedin-in fa-lg"></i>
+
+            </div>
+        </div>
+    </div>
+</body>
